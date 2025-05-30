@@ -8,26 +8,22 @@
 </head>
 <body>
     <header>
-        <div class="container">
-
-            <div id="nome_restaurante">
-                <h3>Sabor e Arte</h3>
-            </div>
-            
-            <div>
-                <nav>
-                    <div>
-                        <h4>Home</h4>
-                        <h4>Cardápio</h4>
-                        <h4>Sobre</h4>
-                        <h4>Contato</h4>
-                    </div>
-                    
-                    <a href="">Reserve mesa</a>
-                </nav>
+        <div id="nome_restaurante">
+            <h3>Sabor e Arte</h3>
+        </div>
+        
+        <div>
+            <nav>
+                <div>
+                    <h4>Home</h4>
+                    <h4>Cardápio</h4>
+                    <h4>Sobre</h4>
+                    <h4>Contato</h4>
+                </div>
+                
+                <a href="">Reserve mesa</a>
+            </nav>
     
-            </div>
-
         </div>
 
     </header>
@@ -51,7 +47,7 @@
         </div>
 
 
-        <div>
+        <div class="container">
 
             <article>
                 <div>
@@ -72,13 +68,13 @@
 
                         <div>
                             <p>Arroz djadahdahds</p>
-                            <h5>Ver mais -></h5>
                         </div>
+                        <p>Ver mais -></p>
                         
                     </section>
 
                     <section>
-                        <img src=""/>
+                        <img src="./imagens_index/sushi1.avif"/>
 
                         <div>
                             <h4>Rissoto de Funghi</h4>
@@ -88,12 +84,12 @@
                         <div>
                             <p>Arroz djadahdahds</p>
                         </div>
-                        <h5>Ver mais -></h5>
+                        <p>Ver mais -></p>
                         
                     </section>
 
                     <section>
-                        <img src=""/>
+                        <img src="./imagens_index/sushi1.avif"/>
 
                         <div>
                             <h4>Rissoto de Funghi</h4>
@@ -103,12 +99,12 @@
                         <div>
                             <p>Arroz djadahdahds</p>
                         </div>
-                        <h5>Ver mais -></h5>
+                        <p>Ver mais -></p>
                         
                     </section>
 
                     <section>
-                        <img src=""/>
+                        <img src="./imagens_index/sushi1.avif"/>
 
                         <div>
                             <h4>Rissoto de Funghi</h4>
@@ -118,12 +114,12 @@
                         <div>
                             <p>Arroz djadahdahds</p>
                         </div>
-                        <h5>Ver mais -></h5>
+                        <p>Ver mais -></p>
                         
                     </section>
 
                     <section>
-                        <img src=""/>
+                        <img src="./imagens_index/sushi1.avif"/>
 
                         <div>
                             <h4>Rissoto de Funghi</h4>
@@ -133,33 +129,39 @@
                         <div>
                             <p>Arroz djadahdahds</p>
                         </div>
-                        <h5>Ver mais -></h5>
+                        <p>Ver mais -><p>
                         
                     </section>
 
-                    <div>
-                        <h4>Rissoto de Funghi</h4>
-                        <h4>R$68,00</h4>
-                    </div>
+                  
+                    <section>
+                        <img src="./imagens_index/sushi1.avif"/>
 
-                    <div>
-                        <p>Arroz djadahdahds</p>
-                    </div>
-                    <h5>Ver mais -></h5>
-                    
-                </section>
+                        <div>
+                            <h4>Rissoto de Funghi</h4>
+                            <h4>R$68,00</h4>
+                        </div>
+
+                        <div>
+                            <p>Arroz djadahdahds</p>
+                        </div>
+                        <p>Ver mais -><p>
+                        
+                    </section>
 
                 </div>
 
             </article>
 
+
+
             <aside>
                 <section>
                     <h4>Nossa culinária</h4>
 
-                    <video></video>
+                    <video controls><source src="videoCulinarios.mp4" type="video/mp4"></video>
 
-                    <p>Conheça mais sobre</p>
+                    <p>Conheça mais sobre as técnicas e ingredientes que utilizamos para criar pratos excepcionais</p>
                 </section>
 
                 <section>
@@ -194,10 +196,10 @@
                         <input type="email" id="email" name="email">
 
                         <label for="data">Data</label>
-                        <input type="datetime-local" id="data" name="data">
+                        <input type="date" id="data" name="data">
 
                         <label for="horario">horario</label>
-                        <input type="datetime" id="horario" name="horario">
+                        <input type="time" id="horario" name="horario">
 
                         <label for="qtdPessoas">Número de pessoas</label>
                         <input type="number" id="qtdPessoas" name="qtdPessoas"/>
@@ -213,18 +215,19 @@
 
         </div>
 
-        <div>
+        <div class="rewiews">
             <article>
                 <h2>O Que Nossos Clientes Dizem</h2>
-                <p>experiência compartilhadas por quem já desfrutou de nossos pratos e ambiente</p>
+                <p>Experiência compartilhadas por quem já desfrutou de nossos pratos e ambiente</p>
             </article>
 
             <div id="container-reviews">
 
                 <section>
-                    <p>Uma experiência gastronômica incrivel!! O risotto de Funghi é simplismente</p>
-                    <div>
-                        <img src="">
+                    <img src="./imagens_index/avaliacao5estrelas.webp" alt="avaliacao5estrelas">
+                    <p>Uma experiência gastronômica incrivel!! O risotto de Funghi é simplismente divino e o atendimento foi impecável. Certamente voltarei mais vezes</p>
+                    <div class="usuario">
+                        <img src="./imagens_index/usuarioImagem.png">
 
                         <div>
                             <h4>Lucas Eckert</h4>
@@ -234,8 +237,10 @@
                 </section>
 
                 <section>
-                    <div>
-                        <img src="">
+                    <img src="./imagens_index/avaliacao5estrelas.webp" alt="avaliacao5estrelas">
+                    <p>Uma experiência gastronômica incrivel!! O risotto de Funghi é simplismente divino e o atendimento foi impecável. Certamente voltarei mais vezes</p>
+                    <div class="usuario">
+                        <img src="./imagens_index/usuarioImagem.png">
 
                         <div>
                           <h4>Lucas Eckert</h4>
@@ -246,8 +251,11 @@
                 </section>
 
                 <section>
-                    <div>
-                        <img src="">
+                    <img src="./imagens_index/avaliacao5estrelas.webp" alt="avaliacao5estrelas">
+                    <p>Uma experiência gastronômica incrivel!! O risotto de Funghi é simplismente divino e o atendimento foi impecável. Certamente voltarei mais vezes</p>
+                    
+                    <div class="usuario">
+                        <img src="./imagens_index/usuarioImagem.png">
 
                         <div>
                           <h4>Lucas Eckert</h4>
@@ -262,7 +270,7 @@
 
         </div>
 
-        <div>
+        <div class="informado">
             <article>
                 <h2>Fique por Dentro das Novidades</h2>
                 <p>Experiências compartilhas por quem já desfrutou de nossos pratos e ambiente</p>
